@@ -7,12 +7,18 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Läufe</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <div *ngIf="!data" class="center-content">
+    <h1>Keine Läufe vorhanden!</h1>
+    <p>Sobald du einen Lauf absolviert hast, wird er hier, inklusive den Zeiten, erscheinen.</p>
+  </div>
 </ion-content>

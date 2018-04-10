@@ -1,12 +1,34 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Start</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ title }}</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h1>Guten Tag, Tim!</h1>
-  <p *ngIf="weather">
-    Brugg: <strong>{{ temperature }}° C</strong>
-  </p>  
+<ion-content>
+  <div class="heading">
+    <h1>Guten Tag<span *ngIf="!name">!</span><span *ngIf="name">, {{ name }}!</span></h1>
+    <span class="weather-display">
+      <p *ngIf="weather">
+        {{ location }}: <strong>{{ temperature }}° C</strong>
+      </p>
+    </span>
+  </div>
+  <div class="select">
+    <p>Wähle eine Bahn aus um zu beginnen!</p>
+    <ion-list>
+      <ion-item>
+        <ion-label>Bahn</ion-label>
+        <ion-select [(ngModel)]="route">
+          <ion-option value="kurz">Kurz</ion-option>
+          <ion-option value="mittel">Mittel</ion-option>
+          <ion-option value="lang">Lang</ion-option>
+          <ion-option value="zufall">Zufällig</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <button ion-button full clear>Loslegen!</button>
+  </div>
 </ion-content>

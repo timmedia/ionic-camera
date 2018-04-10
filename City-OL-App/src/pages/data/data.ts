@@ -14,6 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'data.html',
 })
 export class DataPage {
+  title: string = 'Läufe';
+  data: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

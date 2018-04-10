@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the MapsPage page.
+ * Generated class for the AboutPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,18 +10,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-maps',
-  templateUrl: 'maps.html',
+  selector: 'page-about',
+  templateUrl: 'about.html',
 })
-export class MapsPage {
-  title: string = 'Karte';
-  enabled: boolean = false;
+export class AboutPage {
+  title: string = 'Über den City-OL';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MapsPage');
+    console.log('ionViewDidLoad AboutPage');
   }
 
 }

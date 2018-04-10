@@ -1,0 +1,47 @@
+<ion-content padding>
+  <ion-slides pager>
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button (click)="skip()" ion-button class="skip-button">{{ skipMessage }}</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <h1>Bahn wählen</h1>
+      <p>Neben einer langen, mittleren und kurzen Bahn gibt es auch eine zufallsgenerierte!</p>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button (click)="skip()" ion-button class="skip-button">{{ skipMessage }}</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <h1>Posten suchen</h1>
+      <p>Die Schilder sind an Stras&shy;sen&shy;la&shy;ter&shy;nen, Zäu&shy;nen oder anderso angebracht.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+        <ion-buttons end>
+          <button (click)="skip()" ion-button class="skip-button">{{ skipMessage }}</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <h1>Code scannen</h1>
+      <p>Bei jedem Posten muss ein QR-&shy;Code ge&shy;scannt, oder eine Buch&shy;sta&shy;ben&shy;kom&shy;bi&shy;na&shy;tion eingegeben werden.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+      </ion-toolbar>
+      <h1>Jetzt anfangen!</h1>
+      <p>Lust dein Können unter Be&shy;weis zu stellen?</p>
+      <button (click)="skip()" ion-button large clear icon-end color="primary">
+        {{ doneMessage }}
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

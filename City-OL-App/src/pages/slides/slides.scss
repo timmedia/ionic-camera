@@ -1,0 +1,12 @@
+page-slides {
+    .slide-zoom {
+        height: 100%;
+    }
+    .toolbar-background {
+        background: #fff;
+        border-color: transparent;
+    }
+    .skip-button {
+        color: color($colors, primary);
+    }
+}

@@ -1,3 +1,29 @@
 page-home {
-
+    .heading {
+        background-color: color($colors, primary);
+        background-image: url('../assets/imgs/bg_temp.jpg');
+        background-size: cover;
+        margin: 0px;
+        padding-bottom: 50px;
+        h1, p {
+            text-align: center;
+            color: color($colors, light);
+            text-shadow: 0px 0px 40px rgba(0,0,0,0.7);
+        }
+        h1 {
+            padding-top: 50px;
+            margin: 0px;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+    }
+    .select > p {
+        text-align: center;
+        padding: 20px;
+    }
+    .weather-display {
+        min-height: 20px;
+    }
 }
