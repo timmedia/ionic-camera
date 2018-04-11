@@ -10,7 +10,7 @@ import { SlidesPage } from '../slides/slides';
 export class HomePage {
   title: string = 'Start';
   location: string;
-  name: string;
+  name: string = 'Tim';
   weather: any;
   temperature: any;
 

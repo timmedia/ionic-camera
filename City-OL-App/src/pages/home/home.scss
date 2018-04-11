@@ -3,8 +3,13 @@ page-home {
         background-color: color($colors, primary);
         background-image: url('../assets/imgs/bg_temp.jpg');
         background-size: cover;
+        background-position: center; 
         margin: 0px;
+        min-height: calc(50vh - 100px);
         padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         h1, p {
             text-align: center;
             color: color($colors, light);
@@ -13,11 +18,20 @@ page-home {
         h1 {
             padding-top: 50px;
             margin: 0px;
-            font-size: 2.5em;
+            font-size: calc(2.2em + 2vw);
         }
         p {
-            font-size: 1.5em;
+            font-size: calc(1.2em + 1vw);
         }
+    }
+    .select-parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .select {
+        width: 100%;
+        max-width: 500px;
     }
     .select > p {
         text-align: center;
