@@ -2,12 +2,12 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import firebase from 'firebase';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { AboutPage } from '../pages/about/about';
 import { ProfilePage } from '../pages/profile/profile';
 import { SlidesPage } from '../pages/slides/slides';
-import { LoginPage } from '../pages/login/login';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,6 +19,14 @@ export class MyApp {
   menuItems: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+    firebase.initializeApp({
+      apiKey: "AIzaSyA1-NMxTS3PMrO2PASZUuz-wHWvxDMi6tk",
+      authDomain: "city-ol-brugg.firebaseapp.com",
+      databaseURL: "https://city-ol-brugg.firebaseio.com",
+      projectId: "city-ol-brugg",
+      storageBucket: "city-ol-brugg.appspot.com",
+      messagingSenderId: "718093798294"
+    });
     this.initializeApp();
 
     // used for an example of ngFor and navigation
