@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
 
@@ -19,18 +18,9 @@ import * as firebase from 'firebase/app';
 export class LoginPage {
   title: string = 'Dein Konto';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private afAuth: AngularFireAuth) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  signInWithGoogle() {
-    this.afAuth.auth
-      .signInWithRedirect(new firebase.auth.GoogleAuthProvider())
-      .then(res => console.log(res));
-  }
-
-  signOut() {
-    this.afAuth.auth.signOut();
-  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');

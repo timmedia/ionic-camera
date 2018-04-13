@@ -21,6 +21,7 @@ import { WeatherProvider } from '../providers/weather/weather';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { GooglePlus } from '@ionic-native/google-plus';
 import { HttpModule } from '@angular/http';
 
 export const firebaseConfig = {
@@ -68,6 +69,7 @@ export const firebaseConfig = {
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     WeatherProvider,
+    GooglePlus,
     AngularFireDatabase
   ]
 })
